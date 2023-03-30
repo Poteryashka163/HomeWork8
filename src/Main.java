@@ -27,13 +27,25 @@ public class Main {
         double [] numbersFractions = {1.57, 7.654, 9.986};
         int [] random = {1, 2, 3, 4, 5};
         for (int i = 0; i < numbers.length; i++) {
-            System.out.print(","+numbers[i]);}
+            System.out.print(numbers[i]);
+            if (i!= numbers.length -1){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
         for (int i = 0; i < numbersFractions.length; i++) {
-            System.out.print(","+numbersFractions[i]);}
+            System.out.print(numbersFractions[i]);
+            if (i!= numbersFractions.length -1){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
         for (int i = 0; i < random.length; i++) {
-            System.out.print(","+random[i]);}
+            System.out.print(random[i]);
+            if (i!= random.length -1){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
 
     }
@@ -43,14 +55,26 @@ public class Main {
         int [] numbers = {4,5,6};
         double [] numbersFractions = {1.57, 7.654, 9.986};
         int [] random = {1, 2, 3, 4, 5};
-        for (int i = numbers.length - 1; i >= 0; i--) {
-            System.out.print(","+numbers[i]);}
+        for (int i = numbers.length - 1; i >= 0; i--){
+            System.out.print(numbers[i]);
+            if (i!=0){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
-        for (int i = numbersFractions.length - 1; i >= 0; i--) {
-            System.out.print(","+numbersFractions[i]);}
+        for (int i = numbersFractions.length - 1; i >= 0; i--){
+            System.out.print(numbersFractions[i]);
+            if (i!=0){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
-        for (int i = random.length - 1; i >= 0; i--) {
-            System.out.print(","+random[i]);}
+        for (int i = random.length - 1; i >= 0; i--){
+            System.out.print(random[i]);
+            if (i!=0){
+                System.out.print(", ");
+            }
+        }
         System.out.println(" ");
 
 
@@ -59,11 +83,9 @@ public class Main {
         System.out.println("Задача 4");
         int [] numbers = {4,5,6};
         for (int i = 0; i < numbers.length; i++) {
-            int x=numbers[i];
-            if (x%2==0);
-            else
-                x++;
-                numbers[i]=x;
+            if (numbers[i]%2!=0);{
+                numbers[i]+=1;
+            }
         }
         System.out.println(Arrays.toString(numbers));
 
